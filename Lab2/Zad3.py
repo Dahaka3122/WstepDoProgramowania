@@ -31,4 +31,4 @@ else:
     print("Niepoprawna operacja")
     exit()
 
-print("Wynik operacji: ", wynik)
+print(f"Wynik operacji: {wynik}")
