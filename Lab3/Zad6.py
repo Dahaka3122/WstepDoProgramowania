@@ -7,12 +7,14 @@ n = int(input("Podaj liczbę studentów: "))
 i = 1
 suma = 0
 
-while i < n+1:
+while True:
     punkty = float(input(f"Podaj liczbę punktów dla studenta {i}: "))
-    if punkty < 0 or punkty > 100:
+    if punkty <= 0 or punkty >= 100:
         continue
     suma = suma + punkty
     i = i + 1
+    if i>n:
+        break
 
 srednia = suma / n
 print("Średnia punktów wynosi: ", srednia)
