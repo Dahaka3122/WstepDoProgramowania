@@ -17,3 +17,19 @@ for i in range(a):
     zestaw_1.append(x)
 print(zestaw_1)
 
+b = int(input("Podaj liczbę elementów listy: "))
+zestaw_2=[random.randint(5,15) for i in range(b)]
+print(zestaw_2)
+
+c = int(input("Podaj liczbę: "))
+if c in zestaw_1:
+    print("Liczba z zestawu 1")
+elif c in zestaw_2:
+    print("Liczba z zestawu 2")
+else:
+    print("Nie ma takiej liczby w obu zestawach")
+
+zestaw_1_2=zestaw_1+zestaw_2
+print(zestaw_1_2)
+zestaw_1_2.sort()
+print(zestaw_1_2)
